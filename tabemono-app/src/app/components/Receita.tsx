@@ -18,13 +18,13 @@ function Receita() {
         </div>
       </div>
       <div>
-        <ul>
-          {ingredientes.map((ingrediente)=> <li key={ingrediente}><p>{ingrediente}</p></li>)}
+        <ul className="list-disc">
+          {ingredientes.map((ingrediente)=> <li key={ingrediente} className="list-item"><p>{ingrediente}</p></li>)}
         </ul>
       </div>
       <div>
         <ol>
-          {preparo.map(prep=> <li key={prep}><p>{prep}</p></li>)}
+          {preparo.map(prep=> <li key={prep} className="border-b-2 py-4"><p>{prep}</p></li>)}
         </ol>
       </div>
     </>
